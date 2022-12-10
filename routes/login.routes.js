@@ -8,39 +8,50 @@ router.route('/').post((req,res)=>{
     User.findOne(
     {
     mobileNo:req.body.mobileNo,
-    password:req.body.password
+   
    },
    (errro,result)=>{
     if(errro){
-        return res.status(403).json({msg:"somthing error "})
+        return res.status(500).json({msg:"somthing error "})
     }
 
         if(result!==null){
             //login
-            sendToken(req.body.mobileNo,req.body.password,'login succesful',res);
+            sendToken(req.body.mobileNo,'login succesful',res);
 
             console.log('login');
         }else{
-            //register
-                const user=new User({
-                    mobileNo:req.body.mobileNo,
-                    password:req.body.password
-                });
-                user.save().then(()=>{
-                    sendToken(req.body.mobileNo,req.body.password,'register succesful',res);
-                }).catch((err)=>{
-                    res.status(500).json({token:err.body,msg:'55'})
-                });
-                console.log('register')
-                //res.json({msg:'register'})
+          
+            console.log('register11');
+                res.json({msg:'register'})
 
         }
   
    })
 });
 
-const sendToken=(mobileNo,password,msg,res)=>{
-    let token=jwt.sign({mobileNo:mobileNo,password:password},'this is mahmoud clone');
+router.route('/register').post((req,res)=>{
+    console.log('register')
+    const user=new User({
+        mobileNo:req.body.mobileNo,
+        password:req.body.password,
+        fullName:req.body.fullName,
+        Email:req.body.Email,
+        gender:req.body.gender,
+        alternateMoNumber:req.body.alternateMoNumber,
+        hint:req.body.hint,
+       
+    });
+    user.save().then(()=>{
+        sendToken(req.body.mobileNo,req.body.password,'register succesful',res);
+    }).catch((err)=>{
+        res.status(500).json({token:err.body,msg:'55'})
+    });
+    console.log('register')
+ })
+
+const sendToken=(mobileNo,msg,res)=>{
+    let token=jwt.sign({mobileNo:mobileNo},'this is mahmoud clone');
     res.json({token:token,msg:msg});
 };
 

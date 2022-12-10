@@ -9,9 +9,26 @@ const User=Schema({
     },
     password:{
         type:String,
-        required:false,
+        required:true,
         unique:false
+    },
+    fullName:{
+        type:String
+    },
+    Email:{
+        type:String
+    },
+    gender:{
+        type:String
+    },
+    alternateMoNumber:{
+        type:String
+    },
+    hint:{
+        type:String
     }
+
+
 })
 
 

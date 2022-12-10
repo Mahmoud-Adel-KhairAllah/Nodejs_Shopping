@@ -1,8 +1,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const port = process.env.port || 20000
-var bodyParser = require('body-parser')
-bodyParser = bodyParser.urlencoded({ extended: true })
+// var bodyParser = require('body-parser')
+// bodyParser = bodyParser.urlencoded({ extended: true })
 
 const app = express()
 mongoose.connect('mongodb+srv://Mahmoud:rlS04KeJiZMH5Zy7@atlascluster.5cxc0r7.mongodb.net/shopping?retryWrites=true&w=majority')
@@ -16,16 +16,15 @@ connection.once('open',()=>{
 
 
 //all request(Get,Post,Put,Patch,Delete)
+app.use(express.json())
     const loginRoute=require('./routes/login.routes')
 app.use('/login',loginRoute)
 
-app.route('/login').get((req,res)=>{
-    res.send('welcom')
+app.route('/').get((req,res)=>{
+    res.send('hello welcom')
  })
 
- app.route('/getProfile').get((req,res)=>{
-    res.send('welcom')
- })
+ 
 
 
 app.listen(port, () => {

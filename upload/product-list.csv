@@ -1,0 +1,10 @@
+name,desc,wishlisted,actual_price,discounte_price,descount,category,sub_category,type,genre,brand,image_url,rating
+T shirt X,this is t shirt,FALSE,500,400,60,man,Topwear,tshirt,new,adidas,https://img.freepik.com/free-psd/black-t-shirt-model-front-view-mockup_125540-1059.jpg,4
+Shirt X,this is shirt,TRUE,425,500,50,Women,Topwear,shirt,classic,Rebook,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blue_Tshirt.jpg/220px-Blue_Tshirt.jpg,4.5
+Clothing,Africa New Women Fashion Hoodie Sweatshirt Dress Printed Slim Fit Women Sweatshirt - Lesotho Active Flag Hoodie Dress,TRUE,468,589,40,man,Topwear,shirt,classic,Puma,https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/433577/item/goods_09_433577.jpg,3.9
+Shirt X,this is shirt,FALSE,496,545,30,Women,Topwear,shirt,new,Rebook,"https://m.media-amazon.com/images/I/51QeCqn2+9L._AC._SR360,460.jpg",4.6
+T shirt L,this is shirt,FALSE,725,891,20,man,Topwear,shirt,classic,Nike,https://cdn11.bigcommerce.com/s-405b0/images/stencil/590x590/products/97/18030/gildan-8000-tee-t-shirt.ca-red__23823.1653069825.jpg,4.2
+Shirt M,this is shirt,TRUE,500,571,10,Women,Topwear,shirt,new,Rebook,https://cdn11.bigcommerce.com/s-405b0/images/stencil/590x590/products/72/16844/2000-gildan-ultra-cotton-t-shirt-white-t-shirt.ca__52550.1654536407.jpg,3.8
+Shirt L,this is shirt,TRUE,250,351,70,man,Topwear,shirt,classic,adidas,https://i.pinimg.com/originals/85/cf/db/85cfdb3ec89e37eaf7fce307768991eb.jpg,4.6
+Shirt XXL,this is shirt,FALSE,210,245,5,Women,Topwear,shirt,new,Rebook,https://mockuptree.com/wp-content/uploads/edd/2018/02/v-neck-t-shirt-mockup-psd.jpg,5
+T Shirt M,this is shirt,TRUE,200,275,10,man,Topwear,shirt,classic,Nike,https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA3L3JtNTU1LW1vY2t1cC1hLTA3YS1wZi1zMTI5LTAyLWw1OTFxY2poLmpwZw.jpg,3.8

@@ -17,8 +17,16 @@ connection.once('open',()=>{
 
 //all request(Get,Post,Put,Patch,Delete)
 app.use(express.json())
-    const loginRoute=require('./routes/login.routes')
-app.use('/login',loginRoute)
+
+const loginRoutes=require('./routes/login.routes');
+const userdetailsRoutes=require('./routes/user_details.routes')
+const productDetailesRoutes=require('./routes/product_details.routes')
+const categoryDetailesRoutes=require('./routes/category_details.routes')
+
+app.use('/login',loginRoutes)
+app.use('/user-details',userdetailsRoutes)
+app.use('/product-details',productDetailesRoutes)
+app.use('/category-details',categoryDetailesRoutes)
 
 app.route('/').get((req,res)=>{
     res.send('hello welcom')

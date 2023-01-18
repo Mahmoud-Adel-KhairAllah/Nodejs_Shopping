@@ -5,7 +5,7 @@ const port = process.env.port || 20000
 // bodyParser = bodyParser.urlencoded({ extended: true })
 
 const app = express()
-mongoose.connect('mongodb+srv://Mahmoud:rlS04KeJiZMH5Zy7@atlascluster.5cxc0r7.mongodb.net/shopping?retryWrites=true&w=majority')
+mongoose.connect('mongodb://127.0.0.1:27017/shopping?retryWrites=true&w=majority')
     .then(() => console.log('Connected!'));
 
 const connection = mongoose.connection;
